@@ -1,0 +1,83 @@
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "Fredoka One", cursive;
+  font-family: "Orbitron", sans-serif;
+}
+
+body {
+  height: 100vh;
+  width: 100vw;
+  background: linear-gradient(90deg, lightpink, lightblue);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+body h1 {
+  margin-right: 15px;
+  font-size: 50px;
+}
+
+.countdownBody {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.dayBody,
+.hourBody,
+.minuteBody,
+.secondBody {
+  margin: 20px;
+  text-align: center;
+  background-color: rgba(224, 255, 255, 0.267);
+  border-radius: 40px;
+  height: 150px;
+  width: 200px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#days,
+#hours,
+#minutes,
+#seconds {
+  font-size: 70px;
+  color: rgb(54, 46, 46);
+}
+
+@media screen and (max-width: 750px) {
+  body {
+    display: block;
+    text-align: center;
+  }
+  .countdownBody {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .dayBody,
+  .hourBody,
+  .minuteBody,
+  .secondBody {
+    margin: 10px;
+    text-align: center;
+    background-color: rgba(224, 255, 255, 0.267);
+    border-radius: 40px;
+    height: 100px;
+    width: 120px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  #days,
+  #hours,
+  #minutes,
+  #seconds {
+    font-size: 35px;
+  }
+}
