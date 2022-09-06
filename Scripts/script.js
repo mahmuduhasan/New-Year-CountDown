@@ -5,9 +5,7 @@ const secondsPH = document.querySelector("#seconds");
 
 const newYearDate = new Date("Jan 1, 2023 00:00:00").getTime();
 
-updateCountDown();
-
-function updateCountDown() {
+const updateCountDown = () => {
   const currentDate = new Date().getTime();
   const gap = newYearDate - currentDate;
   const second = 1000;
@@ -29,8 +27,19 @@ function updateCountDown() {
   hoursPH.textContent = h;
   minutesPh.textContent = m;
   secondsPH.textContent = s;
+  let r1 = Math.ceil(Math.random() * 255);
+  let g1 = Math.ceil(Math.random() * 255);
+  let b1 = Math.ceil(Math.random() * 255);
 
+  let r2 = Math.ceil(Math.random() * 255);
+  let g2 = Math.ceil(Math.random() * 255);
+  let b2 = Math.ceil(Math.random() * 255);
+
+  let bgColor = `linear-gradient(90deg, rgb(${r1},${g1},${b1}), rgb(${r2},${g2},${b2}))`;
+  document.body.style.background = bgColor;
   setTimeout(() => {
     updateCountDown();
   }, 1000);
-}
+};
+
+updateCountDown();
