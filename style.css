@@ -50,8 +50,7 @@ body h1 {
 
 @media screen and (max-width: 750px) {
   body {
-    display: block;
-    text-align: center;
+    flex-direction: column;
   }
   .countdownBody {
     flex-direction: column;
