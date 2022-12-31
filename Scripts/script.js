@@ -3,7 +3,7 @@ const hoursPH = document.querySelector("#hours");
 const minutesPh = document.querySelector("#minutes");
 const secondsPH = document.querySelector("#seconds");
 
-const newYearDate = new Date("Jan 1, 2023 00:00:00").getTime();
+const newYearDate = new Date("Jan 1, 2024 00:00:00").getTime();
 
 const updateCountDown = () => {
   const currentDate = new Date().getTime();
